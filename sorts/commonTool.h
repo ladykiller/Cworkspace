@@ -37,3 +37,10 @@ int* randNumGenerate(int n);
   Description: 往文件写入字符串 
 */
 void writeLog(char* ch,FILE* fp);
+
+/*
+  Name: getTime 
+  return: double
+  Description: 返回当前时间戳。一般用于计时 
+*/
+double getTime();

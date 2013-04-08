@@ -42,3 +42,9 @@ void writeLog(char* ch,FILE* fp){
         fputc(ch[i],fp);
     }
 }
+
+double getTime(){
+     clock_t start = clock();
+     double duration = (double) start/ CLOCKS_PER_SEC; 
+     return duration;
+}

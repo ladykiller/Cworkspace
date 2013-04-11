@@ -38,3 +38,30 @@ void quickSort(int* arr,int start,int end);
                使用i或j发起递归都是可以的。 
 */
 void quickSortWa(int* arr,int start,int end);
+
+/*
+  Name: bubbleSort 
+  Param: int* arr  需要排序的数组 
+  Param: int n  数组长度 
+  return: void
+  Description: 冒泡排序，时间复杂度n^2 
+*/
+void bubbleSort(int* arr,int n);
+
+/*
+  Name: allPermutation 
+  Param: int* arr  全排列数组 
+  Param: int m  全排列起始位置 
+  Param: int n  全排列终止位置 
+  return: void
+  Description:  打印全排列的所有情况 
+*/
+void allPermutation(int* arr,int m,int n);
+
+/*
+  Name: allPermutationValue 
+  Param: int n  全排列位数
+  return: void
+  Description:  计算全排列个数，即n! 
+*/
+int allPermutationValue(int n);

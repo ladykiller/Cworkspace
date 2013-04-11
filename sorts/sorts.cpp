@@ -1,6 +1,11 @@
 #include <cstdlib>
 #include <iostream>
+#include <algorithm>
 #include "sorts.h"
+
+void swap(int &a,int &b){
+     int t=a;a=b;b=t;
+}
 
 void quickSort(int* arr,int start,int end){
      if(start<end){
@@ -40,4 +45,39 @@ void quickSortWa(int* arr,int start,int end){
          quickSortWa(arr,start,j-1);
          quickSortWa(arr,j+1,end);
      }     
+}
+
+void bubbleSort(int* arr,int n){
+     int i,j,t,temp;
+     for(i=0;i<n;i++){
+         t=n-i;
+         for(j=1;j<t;j++){
+             if(arr[j]<arr[j-1]){
+                 temp=arr[j];
+                 arr[j]=arr[j-1];
+                 arr[j-1]=temp;
+             }
+         }
+     }
+}
+
+void allPermutation(int* arr,int m,int n){
+     if(m==n){
+         int i;
+         for(i=0;i<=n;i++)
+             printf("%d\t",arr[i]);
+         printf("\n");
+     }else{
+         int j;
+         for(j=m;j<=n;j++){
+             swap(arr[m],arr[j]);
+             allPermutation(arr,m+1,n);
+             swap(arr[m],arr[j]);
+         }
+     }
+}
+
+int allPermutationValue(int n){
+     if(n==1) return 1;
+     return n*allPermutationValue(n-1);
 }

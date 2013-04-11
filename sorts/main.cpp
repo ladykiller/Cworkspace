@@ -8,14 +8,12 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     int i,n;
+    double start,finish;
     printf("请输入随机数组大小：");
     scanf("%d",&n);
     int* randArray = randNumGenerate(n);
-    quickSortWa(randArray,0,n-1);
-    for(i=0;i<n;i++){
-        printf("%d\n",randArray[i]);
-    }
-    
+    allPermutation(randArray,0,n-1);
+    printf("共 %d 种排列组合！\n",allPermutationValue(n));
     system("PAUSE");
     return EXIT_SUCCESS;
 }

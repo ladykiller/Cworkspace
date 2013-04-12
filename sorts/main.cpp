@@ -14,6 +14,12 @@ int main(int argc, char *argv[])
     int* randArray = randNumGenerate(n);
     allPermutation(randArray,0,n-1);
     printf("共 %d 种排列组合！\n",allPermutationValue(n));
+    bubbleSort(randArray,n);
+    printArrayH(randArray,n); 
+    randArray = randNumGenerate(n);
+    quickSort(randArray,0,n-1);
+    printArrayH(randArray,n); 
+    
     system("PAUSE");
     return EXIT_SUCCESS;
 }

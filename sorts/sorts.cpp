@@ -1,11 +1,6 @@
 #include <cstdlib>
 #include <iostream>
-#include <algorithm>
 #include "sorts.h"
-
-void swap(int &a,int &b){
-     int t=a;a=b;b=t;
-}
 
 void quickSort(int* arr,int start,int end){
      if(start<end){

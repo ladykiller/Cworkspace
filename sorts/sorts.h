@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <iostream>
+#include "commonTool.h"
 
 /*
   Name: еепР©Б 

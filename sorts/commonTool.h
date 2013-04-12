@@ -44,3 +44,28 @@ void writeLog(char* ch,FILE* fp);
   Description: 返回当前时间戳。一般用于计时 
 */
 double getTime();
+
+/*
+  Name: swap 
+  return: void
+  Description: 交换两个数值 
+*/
+void swap(int &a,int &b);
+
+/*
+  Name: printArray 
+  Param: int* ch arr 需要打印的数组 
+  Param: int n 数组长度 
+  return: void
+  Description: 竖着打印数组 
+*/
+void printArrayV(int* arr,int n);
+
+/*
+  Name: printArray 
+  Param: int* ch arr 需要打印的数组 
+  Param: int n 数组长度 
+  return: void
+  Description: 横着打印数组 
+*/
+void printArrayH(int* arr,int n);

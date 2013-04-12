@@ -48,3 +48,22 @@ double getTime(){
      double duration = (double) start/ CLOCKS_PER_SEC; 
      return duration;
 }
+
+void swap(int &a,int &b){
+     int t=a;a=b;b=t;
+}
+
+void printArrayV(int* arr,int n){
+     int i;
+     for(i=0;i<n;i++){
+         printf("%d\n",arr[i]);
+     }
+}
+
+void printArrayH(int* arr,int n){
+     int i;
+     for(i=0;i<n;i++){
+         printf("%d\t",arr[i]);
+     }
+     printf("\n");
+}
